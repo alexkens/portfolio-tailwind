@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="dist/home.css">
     
 </head>
-<body>
+<body class="bg-secondary">
 
   <header class="flex flex-row justify-around items-center border">
 
@@ -16,8 +16,8 @@
       <div class="flex flex-col">
         <a href="home.html">
           <img id="logo-img" class="" src="img/ring-svgrepo-com.svg">
-          <div id="logo-text" class="text-xs">
-            <div >Alex</div>
+          <div id="logo-text" class="text-xs font-foundation">
+            <div class="">Alex</div>
             <div>Kens</div>
           </div>
         </a>
@@ -27,6 +27,11 @@
     <input type="checkbox" id="navbar1-toggle" name="navbar1-toggle">
     <label for="navbar1-toggle">
       <img src="img/hamburger-svgrepo-com.svg">
+    </label>
+
+    <input type="checkbox" id="navbar2-toggle" name="navbar2-toggle">
+    <label for="navbar2-toggle">
+      <img src="img/pizza-svgrepo-com.svg">
     </label>
 
     <nav id="navbar1">
@@ -41,11 +46,6 @@
       </ul>
     </nav>
 
-    <input type="checkbox" id="navbar2-toggle" name="navbar2-toggle">
-    <label for="navbar2-toggle">
-      <img src="img/pizza-svgrepo-com.svg">
-    </label>
-
     <nav id="navbar2" class="">
       <ul>
         <li><div>Darkmode</div></li>
@@ -55,6 +55,14 @@
     </nav>
 
   </header>
+
+  <iframe src="https://www.google.de/maps/place/Deutsches+Spionagemuseum/@52.5089252,13.3767333,17z/data=!3m2!4b1!5s0x47a851c94ac5d119:0x911b21f50c869135!4m6!3m5!1s0x47a851cebc15e507:0xdd5eea35bbd0995a!8m2!3d52.508922!4d13.3793082!16s%2Fg%2F11ckqrmxm0?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"
+    id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    loading="lazy"
+    ></iframe>
 
       <main>
 

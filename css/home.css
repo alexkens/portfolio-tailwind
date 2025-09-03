@@ -1,17 +1,10 @@
 @import "tailwindcss";
 
-/* Load your font */
 @font-face {
   font-family: 'foundation';
   src: url('./FoundationLogo.ttf') format('truetype');
 }
 
-/* Optional global styles */
-body {
-  font-family: foundation;
-}
-
-/* Tailwind v4 theme customization */
 @theme {
   --font-foundation: 'foundation', sans-serif;
 
@@ -23,12 +16,12 @@ body {
   --color-fontSecondary: #2D0320;
 }
 
-
 #logo-img {
   height: 6rem;
   width: 6rem;
   position: absolute;
-  animation: rotatePos 5s linear infinite;
+  opacity: 0.75;
+  animation: rotatePos 15s linear infinite;
 }
 
 #logo-text {
@@ -51,9 +44,6 @@ body {
 
 header img {
   width: 50px;
-}
-
-header li {
 }
 
 #navbar1 {
