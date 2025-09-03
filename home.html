@@ -8,14 +8,14 @@
     <link rel="stylesheet" type="text/css" href="dist/home.css">
     
 </head>
-<body class="bg-secondary">
+<body class="bg-secondary grid row-span-3">
 
-  <header class="flex flex-row justify-around items-center border bg-primary relative">
+  <header class="flex flex-row justify-around items-center bg-primary relative">
 
     <div>
       <div class="flex flex-col hover:text-shadow-md active:opacity-70">
         <a href="home.html">
-          <img id="logo-img" class="" src="img/circle_chain.svg">
+          <img id="logo-img" class="animate-rotate" src="img/svg/circle_chain.svg">
           <div id="logo-text" class="text-xs font-foundation text-fontPrimary">
             <div class="">Alex</div>
             <div>Kens</div>
@@ -26,7 +26,7 @@
 
     <input type="checkbox" id="navbar1-toggle" name="navbar1-toggle">
     <label for="navbar1-toggle">
-      <img class="hover:shadow-md active:opacity-70" src="img/hamburger-svgrepo-com.svg">
+      <img class="drop-shadow-md hover:drop-shadow-none active:opacity-70" src="img/svg/blob1.svg">
     </label>
 
     <nav id="navbar1" class="bg-primary text-fontPrimary border p-1 hidden absolute top-full">
@@ -43,7 +43,7 @@
 
     <input type="checkbox" id="navbar2-toggle" name="navbar2-toggle">
     <label for="navbar2-toggle">
-      <img class="hover:shadow-md active:opacity-70" src="img/pizza-svgrepo-com.svg">
+      <img class="drop-shadow-md hover:drop-shadow-none active:opacity-70" src="img/svg/blob2.svg">
     </label>
 
     <nav id="navbar2" class="bg-primary text-fontPrimary border p-1 hidden absolute right-0 top-full">
@@ -66,43 +66,48 @@
           </form>
         </search>
 
-        <section id="hero">
-
-          <img src="">
-          <div>
-            <p>Programmer</p>
-            <p>Web-Developer</p>
-            <p>Computer Scientist</p>
+        <section id="hero" class="grid md:grid-cols-2 xs:grid-cols-1 justify-center items-center m-2 p-2">
+          <div class="animate-deblur flex justify-center">
+            <img class="w-70 rounded-tl-2xl rounded-br-2xl animate-comeFromLeft shadow-2xl" src="img/profile_pictures/profile1.jpg">
+          </div>
+          <div id="hero-text" class="font-foundation text-primary text-2xl text-shadow-lg whitespace-pre xs:whitespace-normal">
+            <div class="animate-comeFromLeft" id="hero-programmer">Programmer</div><div>  Web-Developer</div><div class="animate-comeFromRight" id="hero-computer">    Computer Scientist</div>
           </div>
 
         </section>
 
-        <section id="profil">
+        <hr class="border-primary border-dashed">
 
-          <div>
+        <section id="profil" class="flex flex-col justify-center items-center m-10 p-5 gap-5 text-justify">
+
+          <div class="flex justify-center items-center gap-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
-            <img src="">
+            <img class="w-50 h-50 rounded-full shadow-md" src="img/profile_pictures/insta_pic.jpg">
           </div>
 
-          <div>
+          <div class="flex justify-center items-center gap-5">
+            <img class="w-50 h-50 rounded-full shadow-md" src="img/profile_pictures/grundeinkommen foto.PNG">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
-            <img src="">
           </div>
 
-          <div>
+          <div class="flex justify-center items-center gap-5">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
-            <img src="">
+            <img class="w-50 h-50 rounded-full shadow-md" src="img/profile_pictures/profile2.jpg">
           </div>
 
         </section>
+
+        <hr class="border-primary border-dashed">
 
         <section id="github">
+
+          <h2 class="text-3xl text-center font-foundation text-primary">Github Projects</h2>
+
           <div class="grid">
 
-            <div class="flex">
-              <h3>title</h3>
-              <img src="">
-              <iframe></iframe>
+            <div class="flex flex-col justify-center items-center w-50">
+              <h3>js-tutorial</h3>
+              <img src="img/github/js-tutorial.PNG">
             </div>
 
           </div>
@@ -118,7 +123,13 @@
 
     </div>
 
-    <footer></footer>
+    <footer class="bg-primary grid justify-center items-center h-30">
+      <h1>Footer</h1>
+
+      <h1>Footer</h1>
+
+      <h1>Footer</h1>
+    </footer>
 
   </div>
 
