@@ -17,16 +17,16 @@
 }
 
 #logo-img {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   position: absolute;
   opacity: 0.75;
   animation: rotatePos 15s linear infinite;
 }
 
 #logo-text {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,24 +46,12 @@ header img {
   width: 50px;
 }
 
-#navbar1 {
-  display: none;
-}
-
 #navbar1-toggle {
   display: none;
 }
 
 #navbar1-toggle:checked ~ #navbar1{
-  display: inline-block;
-  background-color: antiquewhite;
-  position: absolute;
-  top: 96px;
-  left: 150px;
-}
-
-#navbar2 {
-  display: none;
+  display: block;
 }
 
 #navbar2-toggle {
@@ -71,11 +59,7 @@ header img {
 }
 
 #navbar2-toggle:checked ~ #navbar2{
-  display: inline-block;
-  background-color: antiquewhite;
-  position: absolute;
-  top: 96px;
-  right: 0px;
+  display: block;
 }
 
 search {

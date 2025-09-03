@@ -10,13 +10,13 @@
 </head>
 <body class="bg-secondary">
 
-  <header class="flex flex-row justify-around items-center border">
+  <header class="flex flex-row justify-around items-center border bg-primary relative">
 
     <div>
-      <div class="flex flex-col">
+      <div class="flex flex-col hover:text-shadow-md active:opacity-70">
         <a href="home.html">
-          <img id="logo-img" class="" src="img/ring-svgrepo-com.svg">
-          <div id="logo-text" class="text-xs font-foundation">
+          <img id="logo-img" class="" src="img/circle_chain.svg">
+          <div id="logo-text" class="text-xs font-foundation text-fontPrimary">
             <div class="">Alex</div>
             <div>Kens</div>
           </div>
@@ -26,15 +26,10 @@
 
     <input type="checkbox" id="navbar1-toggle" name="navbar1-toggle">
     <label for="navbar1-toggle">
-      <img src="img/hamburger-svgrepo-com.svg">
+      <img class="hover:shadow-md active:opacity-70" src="img/hamburger-svgrepo-com.svg">
     </label>
 
-    <input type="checkbox" id="navbar2-toggle" name="navbar2-toggle">
-    <label for="navbar2-toggle">
-      <img src="img/pizza-svgrepo-com.svg">
-    </label>
-
-    <nav id="navbar1">
+    <nav id="navbar1" class="bg-primary text-fontPrimary border p-1 hidden absolute top-full">
       <ul>
         <li><a>Start</a></li>
         <li><a>Profil</a></li>
@@ -46,7 +41,12 @@
       </ul>
     </nav>
 
-    <nav id="navbar2" class="">
+    <input type="checkbox" id="navbar2-toggle" name="navbar2-toggle">
+    <label for="navbar2-toggle">
+      <img class="hover:shadow-md active:opacity-70" src="img/pizza-svgrepo-com.svg">
+    </label>
+
+    <nav id="navbar2" class="bg-primary text-fontPrimary border p-1 hidden absolute right-0 top-full">
       <ul>
         <li><div>Darkmode</div></li>
         <li><div>Eng</div></li>
@@ -56,15 +56,7 @@
 
   </header>
 
-  <iframe src="https://www.google.de/maps/place/Deutsches+Spionagemuseum/@52.5089252,13.3767333,17z/data=!3m2!4b1!5s0x47a851c94ac5d119:0x911b21f50c869135!4m6!3m5!1s0x47a851cebc15e507:0xdd5eea35bbd0995a!8m2!3d52.508922!4d13.3793082!16s%2Fg%2F11ckqrmxm0?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"
-    id="inlineFrameExample"
-    title="Inline Frame Example"
-    width="300"
-    height="200"
-    loading="lazy"
-    ></iframe>
-
-      <main>
+  <main>
 
         <search>
           <form action="">

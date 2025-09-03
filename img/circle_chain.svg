@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <title>Circle with arc bumps</title>
+
+  <defs>
+    <!-- Define a repeating arc pattern -->
+    <pattern id="arcPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <!-- Little arc ("bump") -->
+      <path d="M 0 30 Q 15 0 30 30" 
+            fill="none" 
+            stroke="#645E9D" 
+            stroke-width="4"/>
+    </pattern>
+  </defs>
+
+  <!-- Empty circle with arc-styled stroke -->
+  <circle cx="120" cy="120" r="90" 
+          fill="none" 
+          stroke="url(#arcPattern)" 
+          stroke-width="6"/>
+</svg>
