@@ -6,7 +6,7 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" type="text/css" href="dist/home.css">
-    
+    <script src="main.js" defer></script>
 </head>
 <body class="bg-secondary grid row-span-3">
 
@@ -31,13 +31,12 @@
 
     <nav id="navbar1" class="bg-primary text-fontPrimary border p-1 hidden absolute top-full">
       <ul>
-        <li><a>Start</a></li>
-        <li><a>Profil</a></li>
-        <li><a>Github</a></li>
-        <li><a>Skills</a></li>
-        <li><a>Experience</a></li>
-        <li><a>Additional Experience</a></li>
-        <li><a>Downloads</a></li>
+        <li><a href="#profile">Profil</a></li>
+        <li><a href="#github">Github</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#add-experience">Additional Experience</a></li>
+        <li><a href="#downloads">Downloads</a></li>
       </ul>
     </nav>
 
@@ -80,19 +79,19 @@
 
         <section id="profil" class="flex flex-col justify-center items-center m-10 p-5 gap-5 text-justify text-primary font-thasadith">
 
-          <div class="flex justify-center items-center gap-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
-            <img class="w-50 h-50 rounded-full shadow-md" src="img/profile_pictures/insta_pic.jpg">
+          <div class="flex flex-wrap justify-center items-center gap-5">
+            <p class="w-80 animate-comeFromLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
+            <img class="w-48 rounded-full shadow-md animate-comeFromRight" src="img/profile_pictures/insta_pic.jpg">
           </div>
 
           <div class="flex justify-center items-center gap-5">
-            <img class="w-50 h-50 rounded-full shadow-md" src="img/profile_pictures/grundeinkommen foto.PNG">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
+            <img class="w-50 h-50 rounded-full shadow-md animate-comeFromLeft" src="img/profile_pictures/grundeinkommen foto.PNG">
+            <p class="animate-comeFromRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
           </div>
 
           <div class="flex justify-center items-center gap-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
-            <img class="w-50 h-50 rounded-full shadow-md" src="img/profile_pictures/profile2.jpg">
+            <p class="animate-comeFromLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
+            <img class="w-50 h-50 rounded-full shadow-md animate-comeFromRight" src="img/profile_pictures/profile2.jpg">
           </div>
 
         </section>
@@ -105,17 +104,58 @@
             <span id="github-dot1">.</span>GitHub Projects<span id="github-dot2">.</span>
           </h2>
 
-          <div class="grid font-thasadith font-bold">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 font-thasadith font-bold">
 
             <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/js-tutorial" target="_blank" rel="noopener noreferrer">
-              <h3 class="hover:underline text-primary">js-tutorial</h3>
-              <img src="img/github/js-tutorial.PNG">
+              <h3 class="hover:underline text-primary text-shadow-md">js-tutorial</h3>
+              <img class="rounded-2xl shadow-lg" src="img/github/js-tutorial.PNG">
+            </a>
+
+            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/agenturStarResponsive" target="_blank" rel="noopener noreferrer">
+              <h3 class="hover:underline text-primary text-shadow-md">agenturStarResponsive</h3>
+              <img class="rounded-2xl shadow-lg" src="img/github/agenturStarResponsive.PNG">
+            </a>
+
+            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/modeling_regression" target="_blank" rel="noopener noreferrer">
+              <h3 class="hover:underline text-primary text-shadow-md">modeling_regression</h3>
+              <img class="rounded-2xl shadow-lg" src="img/github/modeling-regression.PNG">
+            </a>
+
+            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/home-advantage-wise22" target="_blank" rel="noopener noreferrer">
+              <h3 class="hover:underline text-primary text-shadow-md">home-advantage</h3>
+              <img class="rounded-2xl shadow-lg" src="img/github/home-advantage.PNG">
+            </a>
+
+            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/portfolio" target="_blank" rel="noopener noreferrer">
+              <h3 class="hover:underline text-primary text-shadow-md">portfolio</h3>
+              <img class="rounded-2xl shadow-lg" src="img/github/portfolio.PNG">
+            </a>
+
+            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/puzzles-and-algorithms" target="_blank" rel="noopener noreferrer">
+              <h3 class="hover:underline text-primary text-shadow-md">puzzles-and-algorithms</h3>
+              <img class="rounded-2xl shadow-lg" src="img/github/puzzles-and-algorithms.PNG">
+            </a>
+
+            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/regression_analysis" target="_blank" rel="noopener noreferrer">
+              <h3 class="hover:underline text-primary text-shadow-md">regression_analysis</h3>
+              <img class="rounded-2xl shadow-lg" src="img/github/regression_analysis.PNG">
+            </a>
+
+            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/traffic_automaton" target="_blank" rel="noopener noreferrer">
+              <h3 class="hover:underline text-primary text-shadow-md">traffic_automaton</h3>
+              <img class="rounded-2xl shadow-lg" src="img/github/traffic_automaton.PNG">
+            </a>
+
+            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/Game_of_Life" target="_blank" rel="noopener noreferrer">
+              <h3 class="hover:underline text-primary text-shadow-md">Game_of_Life</h3>
+              <img class="rounded-2xl shadow-lg" src="img/github/Game_of_Life.PNG">
             </a>
 
           </div>
-
-
         </section>
+
+        <iframe class="rounded-2xl" src="https://afripoli.com" frameborder="0" allowfullscreen="true" width="800px" height="500px" loading="lazy"></iframe>
+
         <section id="skills"></section>
         <section id="experience"></section>
         <section id="add-experience"></section>
