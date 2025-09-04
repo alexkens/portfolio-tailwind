@@ -120,27 +120,51 @@ h2 {
   
 }
 
-#github-underscore {
+#github-dot1 {
   display: inline-block;
   transform: translate(5px, 6px);
-  animation: walkingBorder 5s 200ms ease-in infinite;
+  animation: walkingBorder1 10s 200ms ease-in infinite;
 }
 
-@keyframes walkingBorder {
+@keyframes walkingBorder1 {
   0% {
     color: #99d5c9;
     transform: translate(5px, 6px);
   }
-  25% {
+  40% {
     transform: translate(405px, 6px);
   }
   50% {
     transform: translate(405px, -30px);
   }
-  75% {
+  90% {
     transform: translate(5px, -30px);
   }
   100% {
     transform: translate(5px, 6px);
+  }
+}
+
+#github-dot2 {
+  display: inline-block;
+  transform: translate(0px, -30px);
+  animation: walkingBorder2 10s 200ms ease-in infinite;
+}
+
+@keyframes walkingBorder2 {
+  0% {
+    transform: translate(0px, -30px);
+  }
+  10% {
+    transform: translate(0px, 6px);
+  }
+  50% {
+    transform: translate(-405px, 6px);
+  }
+  60% {
+    transform: translate(-405px, -30px);
+  }
+  100% {
+    transform: translate(0px, -30px);
   }
 }
