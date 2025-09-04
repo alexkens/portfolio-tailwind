@@ -5,8 +5,26 @@
   src: url('./FoundationLogo.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'fredericka';
+  src: url('./FrederickatheGreat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'mc';
+  src: url('./ManufacturingConsent-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'thasadith';
+  src: url('./Thasadith-Regular.ttf') format('truetype');
+}
+
 @theme {
   --font-foundation: 'foundation', sans-serif;
+  --font-fredericka: 'fredericka', sans-serif;
+  --font-mc: 'mc', sans-serif;
+  --font-thasadith: 'thasadith', sans-serif;
 
   --color-primary: #99d5c9;
   --color-secondary: #6c969d;
@@ -93,4 +111,36 @@ search {
 @keyframes deblur {
   0% { filter: blur(8px ); }
   100% { filter: blur(0px); }
+}
+
+h2 {
+  display: inline-block;
+  overflow: visible;
+  box-sizing: border-box;
+  
+}
+
+#github-underscore {
+  display: inline-block;
+  transform: translate(5px, 6px);
+  animation: walkingBorder 5s 200ms ease-in infinite;
+}
+
+@keyframes walkingBorder {
+  0% {
+    color: #99d5c9;
+    transform: translate(5px, 6px);
+  }
+  25% {
+    transform: translate(405px, 6px);
+  }
+  50% {
+    transform: translate(405px, -30px);
+  }
+  75% {
+    transform: translate(5px, -30px);
+  }
+  100% {
+    transform: translate(5px, 6px);
+  }
 }

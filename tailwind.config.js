@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         foundation: ["foundation", "sans-serif"],
+        fredericka: ["fredericka", "sans-serif"],
       },
       colors: {
         primary: "#99d5c9",
