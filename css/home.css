@@ -37,6 +37,7 @@
   --animate-comeFromLeft: comeFromLeft 3s;
   --animate-comeFromRight: comeFromRight 3s;
   --animate-deblur: deblur 3s;
+  --animate-fadine: fadein 3s;
 }
 
 #logo-img {
