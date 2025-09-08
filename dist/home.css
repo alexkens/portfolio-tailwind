@@ -31,6 +31,7 @@
     --font-thasadith: 'thasadith', sans-serif;
     --color-primary: #99d5c9;
     --color-secondary: #6c969d;
+    --color-tertiary: #645E9D;
     --color-fontPrimary: #392B58;
     --color-fontSecondary: #2D0320;
     --animate-rotate: rotate 10s linear infinite;
@@ -248,6 +249,9 @@
   .h-2\.5 {
     height: calc(var(--spacing) * 2.5);
   }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
   .h-30 {
     height: calc(var(--spacing) * 30);
   }
@@ -275,6 +279,9 @@
   .w-30 {
     width: calc(var(--spacing) * 30);
   }
+  .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
@@ -286,6 +293,9 @@
   }
   .w-80 {
     width: calc(var(--spacing) * 80);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .w-150 {
     width: calc(var(--spacing) * 150);
@@ -421,6 +431,9 @@
   }
   .bg-secondary {
     background-color: var(--color-secondary);
+  }
+  .bg-tertiary {
+    background-color: var(--color-tertiary);
   }
   .bg-yellow-600 {
     background-color: var(--color-yellow-600);
