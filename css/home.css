@@ -38,6 +38,8 @@
   --animate-comeFromRight: comeFromRight 3s;
   --animate-deblur: deblur 3s;
   --animate-fadine: fadein 3s;
+
+  --list-marker: "";
 }
 
 #logo-img {
@@ -164,6 +166,55 @@ h2 {
   }
   60% {
     transform: translate(-405px, -30px);
+  }
+  100% {
+    transform: translate(0px, -30px);
+  }
+}
+
+#skills-dot1 {
+  display: inline-block;
+  transform: translate(5px, 6px);
+  animation: walkingBorder3 10s 200ms ease-in infinite;
+}
+
+@keyframes walkingBorder3 {
+  0% {
+    color: #99d5c9;
+    transform: translate(5px, 6px);
+  }
+  40% {
+    transform: translate(150px, 6px);
+  }
+  50% {
+    transform: translate(150px, -30px);
+  }
+  90% {
+    transform: translate(5px, -30px);
+  }
+  100% {
+    transform: translate(5px, 6px);
+  }
+}
+
+#skills-dot2 {
+  display: inline-block;
+  transform: translate(0px, -30px);
+  animation: walkingBorder4 10s 200ms ease-in infinite;
+}
+
+@keyframes walkingBorder4 {
+  0% {
+    transform: translate(0px, -30px);
+  }
+  10% {
+    transform: translate(0px, 6px);
+  }
+  50% {
+    transform: translate(-150px, 6px);
+  }
+  60% {
+    transform: translate(-150px, -30px);
   }
   100% {
     transform: translate(0px, -30px);
