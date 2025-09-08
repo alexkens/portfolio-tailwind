@@ -11,7 +11,7 @@
 </head>
 <body class="bg-secondary grid row-span-3">
 
-  <header class="flex flex-row justify-around items-center bg-primary relative">
+  <header id="header" class="flex flex-row justify-around items-center bg-primary relative">
 
     <div>
       <div class="flex flex-col hover:text-shadow-md active:opacity-70">
@@ -36,8 +36,6 @@
         <li><a href="#github">Github</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#add-experience">Additional Experience</a></li>
-        <li><a href="#downloads">Downloads</a></li>
       </ul>
     </nav>
 
@@ -58,197 +56,184 @@
 
   <main>
 
-        <search>
-          <form action="">
-            <label for="page-filter">Filter page: </label>
-            <input class="w-2 border" type="search" id="page-filter">
-            <button class="border rounded-sm" type="submit">Search</button>
-          </form>
-        </search>
+    <search>
+      <form action="">
+        <label for="page-filter">Filter page: </label>
+        <input class="w-2 border" type="search" id="page-filter">
+        <button class="border rounded-sm" type="submit">Search</button>
+      </form>
+    </search>
 
-        <section id="hero" class="grid md:grid-cols-2 xs:grid-cols-1 justify-center items-center m-2 p-2">
-          <div class="animate-deblur flex justify-center">
-            <img class="w-70 rounded-tl-2xl rounded-br-2xl animate-comeFromLeft shadow-2xl" src="img/profile_pictures/profile1.jpg">
-          </div>
-          <div id="hero-text" class="font-foundation text-primary text-2xl text-shadow-lg whitespace-pre xs:whitespace-normal">
-            <div class="animate-comeFromLeft" id="hero-programmer">Programmer</div><div>  Web-Developer</div><div class="animate-comeFromRight" id="hero-computer">    Software-Engineer</div>
-          </div>
+    <section id="hero" class="grid md:grid-cols-2 xs:grid-cols-1 justify-center items-center m-2 p-2">
+      <div class="animate-deblur flex justify-center">
+        <img class="w-70 rounded-tl-2xl rounded-br-2xl animate-comeFromLeft shadow-2xl" src="img/profile_pictures/profile1.jpg">
+      </div>
+      <div id="hero-text" class="font-foundation text-primary text-2xl text-shadow-lg whitespace-pre xs:whitespace-normal">
+        <div class="animate-comeFromLeft" id="hero-programmer">Programmer</div><div>  Web-Developer</div><div class="animate-comeFromRight" id="hero-computer">    Software-Engineer</div>
+      </div>
 
-        </section>
+    </section>
 
-        <hr class="border-primary border-dashed">
+    <hr class="border-primary border-dashed">
 
-        <section id="profile" class="flex flex-col justify-center items-center m-10 p-5 gap-5 text-justify text-primary font-thasadith">
+    <section id="profile" class="flex flex-col justify-center items-center m-10 p-5 gap-5 text-justify text-primary font-thasadith">
 
-          <div class="flex flex-wrap justify-center items-center gap-5">
-            <p id="left" class="w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
-            <img id="right" class="w-48 rounded-full shadow-md" src="img/profile_pictures/insta_pic.jpg">
-          </div>
+      <div class="flex flex-wrap justify-center items-center gap-5">
+        <p id="left" class="w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
+        <img id="right" class="w-48 rounded-full shadow-md" src="img/profile_pictures/insta_pic.jpg">
+      </div>
 
-          <div class="flex flex-wrap justify-center items-center gap-5">
-            <img id="left" class="w-48 rounded-full shadow-md" src="img/profile_pictures/grundeinkommen foto.PNG">
-            <p id="right" class="w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
-          </div>
+      <div class="flex flex-wrap justify-center items-center gap-5">
+        <img id="left" class="w-48 rounded-full shadow-md" src="img/profile_pictures/grundeinkommen foto.PNG">
+        <p id="right" class="w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
+      </div>
 
-          <div class="flex flex-wrap justify-center items-center gap-5">
-            <p id="left" class="w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
-            <img id="right" class="w-48 h-full rounded-full shadow-md" src="img/profile_pictures/profile2.jpg">
-          </div>
+      <div class="flex flex-wrap justify-center items-center gap-5">
+        <p id="left" class="w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
+        <img id="right" class="w-48 h-full rounded-full shadow-md" src="img/profile_pictures/profile2.jpg">
+      </div>
 
-        </section>
+    </section>
 
-        <hr class="border-primary border-dashed">
+    <hr class="border-primary border-dashed">
 
-        <section id="github" class="flex flex-col justify-center items-center gap-5 my-5">
+    <section id="github" class="flex flex-col justify-center items-center gap-5 my-5">
 
-          <h2 class="text-3xl font-foundation text-primary border-0 border-primary p-2 whitespace-normal">
-            <span id="github-dot1">.</span>GitHub Projects<span id="github-dot2">.</span>
-          </h2>
+      <h2 class="text-3xl font-foundation text-primary border-0 border-primary p-2 whitespace-normal">
+        <span id="github-dot1">.</span>GitHub Projects<span id="github-dot2">.</span>
+      </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 font-thasadith font-bold">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 font-thasadith font-bold">
 
-            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/js-tutorial" target="_blank" rel="noopener noreferrer">
-              <h3 class="hover:underline text-primary text-shadow-md">js-tutorial</h3>
-              <img class="rounded-2xl shadow-lg" src="img/github/js-tutorial.PNG">
-            </a>
+        <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/js-tutorial" target="_blank" rel="noopener noreferrer">
+          <h3 class="hover:underline active:text-white text-primary text-shadow-md">js-tutorial</h3>
+          <img class="rounded-2xl shadow-lg" src="img/github/js-tutorial.PNG">
+        </a>
 
-            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/agenturStarResponsive" target="_blank" rel="noopener noreferrer">
-              <h3 class="hover:underline text-primary text-shadow-md">agenturStarResponsive</h3>
-              <img class="rounded-2xl shadow-lg" src="img/github/agenturStarResponsive.PNG">
-            </a>
+        <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/agenturStarResponsive" target="_blank" rel="noopener noreferrer">
+          <h3 class="hover:underline active:text-white text-primary text-shadow-md">agenturStarResponsive</h3>
+          <img class="rounded-2xl shadow-lg" src="img/github/agenturStarResponsive.PNG">
+        </a>
 
-            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/modeling_regression" target="_blank" rel="noopener noreferrer">
-              <h3 class="hover:underline text-primary text-shadow-md">modeling_regression</h3>
-              <img class="rounded-2xl shadow-lg" src="img/github/modeling-regression.PNG">
-            </a>
+        <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/modeling_regression" target="_blank" rel="noopener noreferrer">
+          <h3 class="hover:underline active:text-white text-primary text-shadow-md">modeling_regression</h3>
+          <img class="rounded-2xl shadow-lg" src="img/github/modeling-regression.PNG">
+        </a>
 
-            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/home-advantage-wise22" target="_blank" rel="noopener noreferrer">
-              <h3 class="hover:underline text-primary text-shadow-md">home-advantage</h3>
-              <img class="rounded-2xl shadow-lg" src="img/github/home-advantage.PNG">
-            </a>
+        <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/home-advantage-wise22" target="_blank" rel="noopener noreferrer">
+          <h3 class="hover:underline active:text-white text-primary text-shadow-md">home-advantage</h3>
+          <img class="rounded-2xl shadow-lg" src="img/github/home-advantage.PNG">
+        </a>
 
-            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/portfolio" target="_blank" rel="noopener noreferrer">
-              <h3 class="hover:underline text-primary text-shadow-md">portfolio</h3>
-              <img class="rounded-2xl shadow-lg" src="img/github/portfolio.PNG">
-            </a>
+        <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/portfolio" target="_blank" rel="noopener noreferrer">
+          <h3 class="hover:underline active:text-white text-primary text-shadow-md">portfolio</h3>
+          <img class="rounded-2xl shadow-lg" src="img/github/portfolio.PNG">
+        </a>
 
-            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/puzzles-and-algorithms" target="_blank" rel="noopener noreferrer">
-              <h3 class="hover:underline text-primary text-shadow-md">puzzles-and-algorithms</h3>
-              <img class="rounded-2xl shadow-lg" src="img/github/puzzles-and-algorithms.PNG">
-            </a>
+        <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/puzzles-and-algorithms" target="_blank" rel="noopener noreferrer">
+          <h3 class="hover:underline active:text-white text-primary text-shadow-md">puzzles-and-algorithms</h3>
+          <img class="rounded-2xl shadow-lg" src="img/github/puzzles-and-algorithms.PNG">
+        </a>
 
-            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/regression_analysis" target="_blank" rel="noopener noreferrer">
-              <h3 class="hover:underline text-primary text-shadow-md">regression_analysis</h3>
-              <img class="rounded-2xl shadow-lg" src="img/github/regression_analysis.PNG">
-            </a>
+        <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/regression_analysis" target="_blank" rel="noopener noreferrer">
+          <h3 class="hover:underline active:text-white text-primary text-shadow-md">regression_analysis</h3>
+          <img class="rounded-2xl shadow-lg" src="img/github/regression_analysis.PNG">
+        </a>
 
-            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/traffic_automaton" target="_blank" rel="noopener noreferrer">
-              <h3 class="hover:underline text-primary text-shadow-md">traffic_automaton</h3>
-              <img class="rounded-2xl shadow-lg" src="img/github/traffic_automaton.PNG">
-            </a>
+        <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/traffic_automaton" target="_blank" rel="noopener noreferrer">
+          <h3 class="hover:underline active:text-white text-primary text-shadow-md">traffic_automaton</h3>
+          <img class="rounded-2xl shadow-lg" src="img/github/traffic_automaton.PNG">
+        </a>
 
-            <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/Game_of_Life" target="_blank" rel="noopener noreferrer">
-              <h3 class="hover:underline text-primary text-shadow-md">Game_of_Life</h3>
-              <img class="rounded-2xl shadow-lg" src="img/github/Game_of_Life.PNG">
-            </a>
+        <a class="flex flex-col justify-center items-center w-50" href="https://github.com/alexkens/Game_of_Life" target="_blank" rel="noopener noreferrer">
+          <h3 class="hover:underline active:text-white text-primary text-shadow-md">Game_of_Life</h3>
+          <img class="rounded-2xl shadow-lg" src="img/github/Game_of_Life.PNG">
+        </a>
 
-          </div>
-        </section>
-        <hr class="border-primary border-dashed">
+      </div>
+    </section>
+    <hr class="border-primary border-dashed">
 
-        <section id="skills" class="flex flex-col justify-center items-center gap-5 my-5 p-20">
+    <section id="skills" class="flex flex-col justify-center items-center gap-5 my-5 p-20">
 
-          <h2 class="text-3xl font-foundation text-primary border-0 border-primary p-2 whitespace-nowrap"><span id="skills-dot1">.</span>Skills<span id="skills-dot2">.</span></h2>
+      <h2 class="text-3xl font-foundation text-primary border-0 border-primary p-2 whitespace-nowrap"><span id="skills-dot1">.</span>Skills<span id="skills-dot2">.</span></h2>
 
-          <div class="skill-container whitespace-normal font-foundation text-fontPrimary">
-            <div><span class="text-primary">P</span>ython</div>
-            <div><span class="text-primary">J</span>avaScript</div>
-            <div><span class="text-primary">J</span>ava</div>
-            <div><span class="text-primary">K</span>otlin</div>
-            <div><span class="text-primary">G</span>it</div>
-            <div><span class="text-primary">C</span>SS</div>
-            <div><span class="text-primary">H</span>TML</div>
-            <div><span class="text-primary">D</span>jango</div>
-            <div><span class="text-primary">A</span>ndroid Studio</div>
-            <div><span class="text-primary">D</span>ata Science</div>
-            <div><span class="text-primary">C</span></div>
-            <div><span class="text-primary">M</span>achine Learning</div>
-            <div><span class="text-primary">P</span>andas</div>
-            <div><span class="text-primary">N</span>umPy</div>
-            <div><span class="text-primary">T</span>ailwindCSS</div>
-            <div><span class="text-primary">V</span>SCode</div>
-          </div>          
+      <div class="skill-container whitespace-normal font-foundation text-fontPrimary max-w-250">
+        <div><span class="text-primary">P</span>ython</div>
+        <div><span class="text-primary">J</span>avaScript</div>
+        <div><span class="text-primary">J</span>ava</div>
+        <div><span class="text-primary">K</span>otlin</div>
+        <div><span class="text-primary">G</span>it</div>
+        <div><span class="text-primary">C</span>SS</div>
+        <div><span class="text-primary">H</span>TML</div>
+        <div><span class="text-primary">D</span>jango</div>
+        <div><span class="text-primary">A</span>ndroid Studio</div>
+        <div><span class="text-primary">D</span>ata Science</div>
+        <div><span class="text-primary">C</span></div>
+        <div><span class="text-primary">M</span>achine Learning</div>
+        <div><span class="text-primary">P</span>andas</div>
+        <div><span class="text-primary">N</span>umPy</div>
+        <div><span class="text-primary">T</span>ailwindCSS</div>
+        <div><span class="text-primary">V</span>SCode</div>
+      </div>          
 
-        </section>
-        <hr class="border-primary border-dashed">
+    </section>
+    <hr class="border-primary border-dashed">
 
-        <section id="experience" class="flex flex-col justify-center items-center my-5 gap-5">
+    <section id="experience" class="flex flex-col justify-center items-center my-5 gap-5">
 
-          <h3 class="text-primary text-shadow-md font-foundation text-2xl">Job Experience</h3>
+      <h3 class="text-primary text-shadow-md font-foundation text-2xl">Job Experience</h3>
 
-          <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
-            <h4 class="text-fontPrimary text-shadow-none text-md font-foundation"><a class="animate-pulse hover:overline" href="https://reiner-lemoine-institut.de/" target="_blank">Reiner Lemoine Institut</a></h4>
-            <p class="font-bold">Software-Engineer | Student job | 2024</p>
-            <ul class="">
-              <li><span class="text-fontPrimary">&#8627;</span>&emsp;Python, Github, Pandas, Matplotlib</li>
-              <li><span class="text-fontPrimary">&#8627;</span>&emsp;Software projects in teams of 4-10</li>
-              <li><span class="text-fontPrimary">&#8627;</span>&emsp;Mobility, fleet simulation</li>
-              <li><span class="text-fontPrimary">&#8627;</span>&emsp;User experience, Design and Webdevelopment for <a class="animate-pulse hover:overline" href="https://mobi-simba-django-testing.apps.rl-institut.de/" target="_blank">EBus2030+</a></li>
-            </ul>
-          </div>
+      <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
+        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation"><a class="animate-pulse hover:overline active:text-white" href="https://reiner-lemoine-institut.de/" target="_blank">Reiner Lemoine Institut</a></h4>
+        <p class="font-bold">Software-Engineer | Student job | 2024</p>
+        <ul class="">
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Python, Github, Pandas, Matplotlib</li>
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Software projects in teams of 4-10</li>
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Mobility, fleet simulation</li>
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;User experience, Design and Webdevelopment for <a class="animate-pulse hover:overline" href="https://mobi-simba-django-testing.apps.rl-institut.de/" target="_blank">EBus2030+</a></li>
+        </ul>
+      </div>
 
-          <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
-            <h4 class="text-fontPrimary text-shadow-none text-md font-foundation"><a class="animate-pulse hover:overline" href="https://datalyze-solutions.com/" target="_blank">Datalyze Solutions</a></h4>
-            <p class="font-bold">Android-Developer | Testing | Student job | 2022</p>
-            <ul class="">
-              <li><span class="text-fontPrimary">&#8627;</span>&emsp;Python, PyTest, Selenium, Android Studio, Java, Kotlin</li>
-              <li><span class="text-fontPrimary">&#8627;</span>&emsp;Development of a Geographical Android-App</li>
-              <li><span class="text-fontPrimary">&#8627;</span>&emsp;Testing of a company website</li>
-            </ul>
-          </div>
+      <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
+        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation"><a class="animate-pulse hover:overline active:text-white" href="https://datalyze-solutions.com/" target="_blank">Datalyze Solutions</a></h4>
+        <p class="font-bold">Android-Developer | Testing | Student job | 2022</p>
+        <ul class="">
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Python, PyTest, Selenium, Android Studio, Java, Kotlin</li>
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Development of a Geographical Android-App</li>
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Testing of a company website</li>
+        </ul>
+      </div>
 
-          <h3 class="text-primary text-shadow-md font-foundation text-2xl">Education</h3>
+      <h3 class="text-primary text-shadow-md font-foundation text-2xl">Education</h3>
 
-          <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
-            <h4 class="text-fontPrimary text-shadow-none text-md font-foundation">Computer Science (B.Sc.)</h4>
-            <p class="font-bold">Technical University of Berlin | 2024</p>
-            <ul class="">
-              <li><span class="text-fontPrimary">&#8627;</span>&emsp;Bachelor thesis: "Implementing and evaluating the user experience in a scientific web-app"
-              <a href="downloads/Abschlussarbeit_395432.pdf" download>
-                <img class="w-6 inline" src="img/svg/download-minimalistic-svgrepo-com.svg" alt="">
-              </a>
-            </li>
-            </ul>
-          </div>
+      <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
+        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation">Computer Science (B.Sc.)</h4>
+        <p class="font-bold">Technical University of Berlin | 2024</p>
+        <ul class="">
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Bachelor thesis: "Implementing and evaluating the user experience in a scientific web-app"
+          <a class="hover:opacity-70" href="downloads/Abschlussarbeit_395432.pdf" download>
+            <img class="w-6 inline" src="img/svg/download-minimalistic-svgrepo-com.svg" alt="">
+          </a>
+        </li>
+        </ul>
+      </div>
 
-          <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
-            <h4 class="text-fontPrimary text-shadow-none text-md font-foundation">History | German | Music Theory</h4>
-            <p class="font-bold">Free University Berlin | 2017</p>
-          </div>
+      <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
+        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation">History | German | Music Theory</h4>
+        <p class="font-bold">Free University Berlin | 2017</p>
+      </div>
 
-        </section>
-        <section id="add-experience"></section>
-        <section id="downloads"></section>
+    </section>
 
-      </main>
+  </main>
 
-    </div>
 
-    <footer class="bg-primary grid justify-center items-center h-30">
-      <h1>Footer</h1>
-
-      <h1>Footer</h1>
-
-      <h1>Footer</h1>
+    <footer class="flex justify-center items-center gap-20 bg-primary h-30 font-foundation text-fontPrimary">
+      <div><a href="#header">Alex Kens</a></div>
+      <div>|</div>
+      <div><a class="hover:opacity-70 active:text-white" href="mailto:alexkens93@gmail.com">Contact</a></div>
     </footer>
-
-  </div>
-
-    
-
-
-  
-
 
 </body>
 </html>
