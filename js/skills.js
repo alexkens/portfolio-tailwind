@@ -1,6 +1,7 @@
 const skills = document.querySelectorAll(".skill-container div");
 
-for(let index in skills) {
+for(let index; index < skills/length;index++) {
+    console.log(index);
 
     let randomN = Math.floor(Math.random() * 30) + 10;
     const fontSize = `text-[${randomN}px]`
