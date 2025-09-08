@@ -36,7 +36,8 @@
   --animate-rotate: rotate 10s linear infinite;
   --animate-comeFromLeft: comeFromLeft 3s;
   --animate-comeFromRight: comeFromRight 3s;
-  --animate-deblur: deblur 3s;
+  --animate-deblur1: deblur 1.5s;
+  --animate-deblur3: deblur 3s;
   --animate-fadine: fadein 3s;
 
   --list-marker: "";
