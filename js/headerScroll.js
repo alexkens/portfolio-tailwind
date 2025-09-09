@@ -9,25 +9,28 @@ const throttle = (func, time = 100) => {
     };
 };
 
+
 const validateHeader = () => {
     const windowY = window.scrollY;
     const windowH = window.innerHeight;
 
-    if(windowY > windowH) {
+    if(windowY > header.scrollHeight) {
+        header.classList.remove('relative');
         header.classList.add('fixed');
     } else {
         header.classList.remove('fixed');
+        header.classList.add('relative');
     }
 
-    if(windowY < lastScroll) {
-        header.classList.add();
-    } else {
-        header.classList.remove();
+    if(windowY > lastScroll) {
+        header.classList.remove('fixed');
+        header.classList.add('relative');
     }
 
     lastScroll = windowY;
 };
 
-window.addEventListener('scroll', throttle(validateHeader, 100));
 const header = document.querySelector('#header');
+window.addEventListener('scroll', throttle(validateHeader, 100));
+
 let lastScroll = 0;

@@ -1,10 +1,9 @@
 const skills = document.querySelectorAll(".skill-container div");
 
-for(let index; index < skills/length;index++) {
-    console.log(index);
+for(let index=0; index < skills.length; index++) {
 
     let randomN = Math.floor(Math.random() * 30) + 10;
-    const fontSize = `text-[${randomN}px]`
+    const fontSize = `text-[${randomN}px]`;
 
     skills[index].classList.add(fontSize);
     skills[index].classList.add("inline-block");
