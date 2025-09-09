@@ -7,6 +7,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
+    --color-amber-950: oklch(27.9% 0.077 45.635);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-gray-950: oklch(13% 0.028 261.692);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
@@ -29,6 +36,7 @@
     --color-secondary: #6c969d;
     --color-tertiary: #645E9D;
     --color-fontPrimary: #392B58;
+    --color-fontSecondary: #2D0320;
     --animate-rotate: rotate 10s linear infinite;
     --animate-comeFromLeft: comeFromLeft 3s;
     --animate-comeFromRight: comeFromRight 3s;
@@ -272,21 +280,6 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .-translate-full {
-    --tw-translate-x: -100%;
-    --tw-translate-y: -100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-1 {
-    --tw-translate-x: calc(var(--spacing) * 1);
-    --tw-translate-y: calc(var(--spacing) * 1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-full {
-    --tw-translate-x: 100%;
-    --tw-translate-y: 100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
@@ -481,6 +474,13 @@
   .text-shadow-none {
     text-shadow: none;
   }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
   .hover\:overline {
     &:hover {
       @media (hover: hover) {
@@ -502,11 +502,41 @@
       }
     }
   }
+  .hover\:shadow-amber-50 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow-color: oklch(98.7% 0.022 95.277);
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-shadow-color: color-mix(in oklab, var(--color-amber-50) var(--tw-shadow-alpha), transparent);
+        }
+      }
+    }
+  }
+  .hover\:shadow-white {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow-color: #fff;
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-shadow-color: color-mix(in oklab, var(--color-white) var(--tw-shadow-alpha), transparent);
+        }
+      }
+    }
+  }
   .hover\:drop-shadow-none {
     &:hover {
       @media (hover: hover) {
         --tw-drop-shadow:  ;
         filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+      }
+    }
+  }
+  .hover\:text-shadow-amber-50 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-text-shadow-color: oklch(98.7% 0.022 95.277);
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-text-shadow-color: color-mix(in oklab, var(--color-amber-50) var(--tw-text-shadow-alpha), transparent);
+        }
       }
     }
   }
@@ -522,6 +552,11 @@
       color: var(--color-white);
     }
   }
+  .active\:opacity-50 {
+    &:active {
+      opacity: 50%;
+    }
+  }
   .active\:opacity-70 {
     &:active {
       opacity: 70%;
@@ -535,6 +570,71 @@
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .dark\:bg-amber-400 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-amber-400);
+    }
+  }
+  .dark\:bg-amber-950 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-amber-950);
+    }
+  }
+  .dark\:bg-black {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-black);
+    }
+  }
+  .dark\:bg-fontPrimary {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-fontPrimary);
+    }
+  }
+  .dark\:bg-fontSecondary {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-fontSecondary);
+    }
+  }
+  .dark\:bg-gray-600 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-gray-600);
+    }
+  }
+  .dark\:bg-gray-800 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-gray-800);
+    }
+  }
+  .dark\:bg-gray-950 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-gray-950);
+    }
+  }
+  .dark\:bg-secondary {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-secondary);
+    }
+  }
+  .dark\:bg-tertiary {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-tertiary);
+    }
+  }
+  .dark\:text-secondary {
+    &:where(.dark, .dark *) {
+      color: var(--color-secondary);
+    }
+  }
+  .dark\:text-white {
+    &:where(.dark, .dark *) {
+      color: var(--color-white);
+    }
+  }
+  .dark\:bg-blend-darken {
+    &:where(.dark, .dark *) {
+      background-blend-mode: darken;
     }
   }
 }
@@ -725,21 +825,6 @@ h2 {
     transform: translate(0px, -30px);
   }
 }
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -913,9 +998,6 @@ h2 {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;

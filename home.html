@@ -11,16 +11,17 @@
     <script src="js/header.js" defer></script>
     <script src="js/sectionObserver.js" defer></script>
     <script src="js/headerScroll.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
 </head>
-<body class="bg-secondary grid row-span-3 dark:bg-black">
+<body class="bg-secondary grid row-span-3 dark:bg-gray-800">
 
-  <header id="header" class="flex flex-row justify-around items-center bg-primary relative w-full">
+  <header id="header" class="flex flex-row justify-around items-center bg-primary dark:bg-secondary relative w-full">
 
     <div>
       <div class="flex flex-col hover:text-shadow-md active:opacity-70">
         <a href="home.html">
           <img id="logo-img" class="animate-rotate" src="img/svg/circle_chain.svg">
-          <div id="logo-text" class="text-xs font-foundation text-fontPrimary">
+          <div id="logo-text" class="text-xs font-foundation text-fontPrimary dark:text-white">
             <div class="">Alex</div>
             <div>Kens</div>
           </div>
@@ -35,10 +36,10 @@
 
     <nav id="navbar1" class="bg-primary text-fontPrimary border p-1 hidden absolute top-full">
       <ul>
-        <li><a href="#profile">Profil</a></li>
-        <li><a href="#github">Github</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a class="hover:text-white active:opacity-50" href="#profile">Profil</a></li>
+        <li><a class="hover:text-white active:opacity-50" href="#github">Github</a></li>
+        <li><a class="hover:text-white active:opacity-50" href="#skills">Skills</a></li>
+        <li><a class="hover:text-white active:opacity-50" href="#experience">Experience</a></li>
       </ul>
     </nav>
 
@@ -49,9 +50,9 @@
 
     <nav id="navbar2" class="bg-primary text-fontPrimary border p-1 hidden absolute right-0 top-full">
       <ul>
-        <li><a href="">Darkmode</a></li>
-        <li><a href="">Eng</a></li>
-        <li><a href="">Search</a></li>
+        <li><a class="hover:text-white active:opacity-50"><button onclick="darkmode()" id="darkmodeButton">Darkmode</button></a></li>
+        <li><a class="hover:text-white active:opacity-50">Eng</a></li>
+        <li><a class="hover:text-white active:opacity-50">Search</a></li>
       </ul>
     </nav>
 
@@ -79,7 +80,7 @@
 
     <hr class="border-primary border-dashed">
 
-    <section id="profile" class="flex flex-col justify-center items-center m-10 p-5 gap-5 text-justify text-primary font-thasadith">
+    <section id="profile" class="flex flex-col justify-center items-center m-10 p-5 gap-5 text-justify text-primary dark:text-white font-thasadith">
 
       <div class="flex flex-wrap justify-center items-center gap-5">
         <p id="left" class="w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
@@ -161,7 +162,7 @@
 
       <h2 class="text-3xl font-foundation text-primary border-0 border-primary p-2 whitespace-nowrap"><span id="skills-dot1">.</span>Skills<span id="skills-dot2">.</span></h2>
 
-      <div class="skill-container whitespace-normal font-foundation text-fontPrimary max-w-250">
+      <div class="skill-container whitespace-normal font-foundation text-fontPrimary dark:text-secondary max-w-250">
         <div><span class="text-primary">P</span>ython</div>
         <div><span class="text-primary">J</span>avaScript</div>
         <div><span class="text-primary">J</span>ava</div>
@@ -262,7 +263,7 @@
 
   </main>
 
-  <footer class="flex justify-center items-center gap-20 bg-primary h-30 font-foundation text-fontPrimary">
+  <footer class="flex justify-center items-center gap-20 bg-primary dark:bg-secondary h-30 font-foundation text-fontPrimary dark:text-white">
     <div><a href="#header">Alex Kens</a></div>
     <div>|</div>
     <div><a class="hover:opacity-70 active:text-white" href="mailto:alexkens93@gmail.com">Contact</a></div>

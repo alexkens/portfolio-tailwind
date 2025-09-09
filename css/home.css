@@ -20,6 +20,8 @@
   src: url('./Thasadith-Regular.ttf') format('truetype');
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-foundation: 'foundation', sans-serif;
   --font-fredericka: 'fredericka', sans-serif;
