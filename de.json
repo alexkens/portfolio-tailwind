@@ -31,5 +31,11 @@
     "ru-lang": "Russisch",
     "es-lang": "Spanisch",
 
-    "contact-form": "Kontakt"
+    "contact-form": "Kontakt",
+
+    "profile-text1": "Ich habe im August 2024 meinen Bachelor of Science in Informatik an der Technischen Universität Berlin abgeschlossen. Teamwork, Motivation und Neugier sind meine wichtigsten Eigenschaften. Vor allem in einer Umgebung wie der Uni steht man oft vor Problemen wie einseitigen Themen und unmotivierten Mitstudenten. Doch für mich stehen die Menschen im Team im Mittelpunkt, welche man gegebenenfalls durch persönlichen Kontakt emotional an das Projekt binden kann. Meine größten Stärken kann man gut in zwei Teile teilen. Erstens, stehe ich mit meinen fachlichen Kenntnissen auf einer soliden Basis, von der ich bereit bin, jede Art von Problem zu lösen. Die zweite Komponente ist ein gutes Durchhaltevermögen, welches langanhaltenden und stressvollen Situationen standhalten kann.",
+
+    "profile-text2": "Gepaart mit wissenschaftlichem Anspruch, lernte ich in meinem Studium die Grundzüge der Informatik und des projektbasierten Arbeitens. Dazu gehören Technologien wie C, Java und Python, aber auch Themen wie Machine Learning und Data Science. Beruflich habe ich mich bereits mit UX-Design, CI/CD, Github und diversen Frameworks wie Django, Android Studio, Pandas, Matplotlib und Numpy beschäftigt. Vor allem meine Zeit im Reiner Lemoine Institut (RLI) führte mich ein in Teamarbeit, Deadlines, Meetings und Kunden.",
+
+    "profile-text3": "In meiner Bachelorarbeit, welche ich auch im RLI geschrieben habe, war der Fokus die Entwicklung und Analyse eines Frontends für eine wissenschaftliche Simulationssoftware. Dabei eignete ich mir Kenntnisse in den Feldern User Experience, Usability, Design und Web Development an. Abseits von der Anwendung, ist es stets mein primäres Ziel zu verstehen wie eine Technologie funktioniert, und nicht einfach Code von Stackoverflow oder LLMs zu kopieren, auch wenn diese Methoden unter Umständen eine sinnvolle Ergänzung sein können. Da ich es gewohnt bin mich eigenständig in Themen einzuarbeiten, beschäftige ich mich auch in meiner Freizeit mit verschiedenen Themen und Technologien."
 }
