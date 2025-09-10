@@ -1,0 +1,35 @@
+{
+    "hero-title1": "Programmer",
+    "hero-title2": "  Web-Developer",
+    "hero-title3": "    Software-Engineer",
+
+    "github-title": "Github Projects",
+    "skills-title": "Skills",
+
+    "job-experience-title": "Job Experience",
+    "education-title": "Education",
+    "language-title": "Languages",
+
+    "rli-description": "Software-Engineer | Student Job | 2024",
+    "rli-note1": "Software projects in teams of 4-10",
+    "rli-note2": "Mobility, fleet simulation",
+    "rli-note3": "User Experience, Design and Web-Development for",
+
+    "datalyze-description": "Android-Developer | Testing | Student Job | 2022",
+    "datalyze-note1": "Development of a Geographical Android-App",
+    "datalyze-note2": "Testing of a company website",
+
+    "tech-uni-title": "Computer Science (B.Sc.)",
+    "tech-uni": "Technical University of Berlin | 2024",
+    "thesis": "Bachelor thesis: 'Implementing and evaluating the user experience in a scientific web-app'",
+
+    "free-uni-title": "History | German | Music Theory",
+    "free-uni": "Free University Berlin | 2017",
+
+    "de-lang": "German",
+    "en-lang": "English",
+    "ru-lang": "Russian",
+    "es-lang": "Spanish",
+
+    "contact-form": "Contact"
+}

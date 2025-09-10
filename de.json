@@ -1,0 +1,35 @@
+{
+    "hero-title1": "Programmist",
+    "hero-title2": "  Netz-Entwickler",
+    "hero-title3": "    Weichgut-Entwickler",
+
+    "github-title": "Github Projekte",
+    "skills-title": "Faehigkeiten",
+
+    "job-experience-title": "Berufserfahrung",
+    "education-title": "Bildungsweg",
+    "language-title": "Sprachen",
+
+    "rli-description": "Weichgut-Entwickler | Werkstudent | 2024",
+    "rli-note1": "Softwareprojekte in Teams von 4-10",
+    "rli-note2": "Mobilität, Flottensimulation",
+    "rli-note3": "Benutzererfahrung, Design und Web-Entwicklung für",
+
+    "datalyze-description": "Android-Entwickler | Testing | Werkstudent | 2022",
+    "datalyze-note1": "Entwicklung einer Geo-Android-Applikation",
+    "datalyze-note2": "Testing einer Firmen-Webseite",
+
+    "tech-uni-title": "Informatik (B.Sc.)",
+    "tech-uni": "Technische Universität Berlin",
+    "thesis": "Bachelorarbeit: 'Implementierung und Evaluation der Benutzererfahrung in einer wissenschaftlichen Web-Applikation'",
+
+    "free-uni-title": "Geschichte | Germanistik | Musiktheorie",
+    "free-uni": "Freie Universität Berlin | 2017",
+
+    "de-lang": "Deutsch",
+    "en-lang": "Englisch",
+    "ru-lang": "Russisch",
+    "es-lang": "Spanisch",
+
+    "contact-form": "Kontakt"
+}

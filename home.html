@@ -11,7 +11,7 @@
     <script src="js/header.js" defer></script>
     <script src="js/sectionObserver.js" defer></script>
     <script src="js/headerScroll.js" defer></script>
-    <script src="js/darkmode.js" defer></script>
+    <script src="js/general.js" defer></script>
 </head>
 <body class="bg-secondary grid row-span-3 dark:bg-gray-800">
 
@@ -48,10 +48,10 @@
       <img class="drop-shadow-md hover:drop-shadow-none active:opacity-70" src="img/svg/blob2.svg">
     </label>
 
-    <nav id="navbar2" class="bg-primary text-fontPrimary border p-1 hidden absolute right-0 top-full">
+    <nav id="navbar2" class="bg-primary text-fontPrimary border p-1 hidden absolute right-20 top-full">
       <ul>
         <li><a class="hover:text-white active:opacity-50"><button onclick="darkmode()" id="darkmodeButton">Darkmode</button></a></li>
-        <li><a class="hover:text-white active:opacity-50">Eng</a></li>
+        <li><a class="hover:text-white active:opacity-50" id="languageLink" onclick="changeLanguage()">DE</a></li>
         <li><a class="hover:text-white active:opacity-50">Search</a></li>
       </ul>
     </nav>
@@ -73,7 +73,7 @@
         <img class="w-70 rounded-tl-2xl rounded-br-2xl animate-comeFromLeft shadow-2xl" src="img/profile_pictures/profile1.jpg">
       </div>
       <div id="hero-text" class="font-foundation text-primary text-2xl text-shadow-lg whitespace-pre xs:whitespace-normal">
-        <div class="animate-comeFromLeft" id="hero-programmer">Programmer</div><div>  Web-Developer</div><div class="animate-comeFromRight" id="hero-computer">    Software-Engineer</div>
+        <div class="animate-comeFromLeft" id="hero-programmer" data-i18n="hero-title1">Programmer</div><div data-i18n="hero-title2">  Web-Developer</div><div class="animate-comeFromRight" id="hero-computer" data-i18n="hero-title3">    Software-Engineer</div>
       </div>
 
     </section>
@@ -104,7 +104,7 @@
     <section id="github" class="flex flex-col justify-center items-center gap-5 my-5">
 
       <h2 class="text-3xl font-foundation text-primary border-0 border-primary p-2 whitespace-normal">
-        <span id="github-dot1">.</span>GitHub Projects<span id="github-dot2">.</span>
+        <span id="github-dot1">.</span><span data-i18n="github-title">GitHub Projects</span><span id="github-dot2">.</span>
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 font-thasadith font-bold">
@@ -158,9 +158,9 @@
     </section>
     <hr class="border-primary border-dashed">
 
-    <section id="skills" class="flex flex-col justify-center items-center gap-5 my-5 p-20">
+    <section id="skills" class="flex flex-col justify-center items-center text-center gap-5 my-5 p-5">
 
-      <h2 class="text-3xl font-foundation text-primary border-0 border-primary p-2 whitespace-nowrap"><span id="skills-dot1">.</span>Skills<span id="skills-dot2">.</span></h2>
+      <h2 class="text-3xl font-foundation text-primary border-0 border-primary p-2 whitespace-nowrap"><span id="skills-dot1">.</span><span  data-i18n="skills-title">Skills</span><span id="skills-dot2">.</span></h2>
 
       <div class="skill-container whitespace-normal font-foundation text-fontPrimary dark:text-secondary max-w-250">
         <div><span class="text-primary">P</span>ython</div>
@@ -186,36 +186,36 @@
 
     <section id="experience" class="flex flex-col justify-center items-center my-5 gap-5">
 
-      <h3 class="text-primary text-shadow-md font-foundation text-2xl">Job Experience</h3>
+      <h3 class="text-primary text-shadow-md font-foundation text-2xl" data-i18n="job-experience-title">Job Experience</h3>
 
       <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
-        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation"><a class="animate-pulse hover:overline active:text-white" href="https://reiner-lemoine-institut.de/" target="_blank">Reiner Lemoine Institut</a></h4>
-        <p class="font-bold">Software-Engineer | Student job | 2024</p>
+        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation dark:text-white"><a class="animate-pulse hover:overline active:text-white" href="https://reiner-lemoine-institut.de/" target="_blank">Reiner Lemoine Institut</a></h4>
+        <p class="font-bold" data-i18n="rli-description">Software-Engineer | Student job | 2024</p>
         <ul class="">
           <li><span class="text-fontPrimary">&#8627;</span>&emsp;Python, Github, Pandas, Matplotlib</li>
-          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Software projects in teams of 4-10</li>
-          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Mobility, fleet simulation</li>
-          <li><span class="text-fontPrimary">&#8627;</span>&emsp;User experience, Design and Webdevelopment for <a class="animate-pulse hover:overline" href="https://mobi-simba-django-testing.apps.rl-institut.de/" target="_blank">EBus2030+</a></li>
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;<span data-i18n="rli-note1">Software projects in teams of 4-10</span></li>
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;<span data-i18n="rli-note2">Mobility, fleet simulation</span></li>
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;<span rli-note3="rli-note3">User experience, Design and Webdevelopment for</span> <a class="animate-pulse hover:overline" href="https://mobi-simba-django-testing.apps.rl-institut.de/" target="_blank">EBus2030+</a></li>
         </ul>
       </div>
 
       <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
-        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation"><a class="animate-pulse hover:overline active:text-white" href="https://datalyze-solutions.com/" target="_blank">Datalyze Solutions</a></h4>
-        <p class="font-bold">Android-Developer | Testing | Student job | 2022</p>
+        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation dark:text-white"><a class="animate-pulse hover:overline active:text-white" href="https://datalyze-solutions.com/" target="_blank">Datalyze Solutions</a></h4>
+        <p class="font-bold" data-i18n="datalyze-description">Android-Developer | Testing | Student job | 2022</p>
         <ul class="">
           <li><span class="text-fontPrimary">&#8627;</span>&emsp;Python, PyTest, Selenium, Android Studio, Java, Kotlin</li>
-          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Development of a Geographical Android-App</li>
-          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Testing of a company website</li>
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;<span data-i18n="datalyze-note1">Development of a Geographical Android-App</span></li>
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;<span data-i18n="datalyze-note2">Testing of a company website</span></li>
         </ul>
       </div>
 
-      <h3 class="text-primary text-shadow-md font-foundation text-2xl">Education</h3>
+      <h3 class="text-primary text-shadow-md font-foundation text-2xl" data-i18n="education-title">Education</h3>
 
       <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
-        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation">Computer Science (B.Sc.)</h4>
-        <p class="font-bold">Technical University of Berlin | 2024</p>
+        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation dark:text-white" data-i18n="tech-uni-title">Computer Science (B.Sc.)</h4>
+        <p class="font-bold" data-i18n="tech-uni">Technical University of Berlin | 2024</p>
         <ul class="">
-          <li><span class="text-fontPrimary">&#8627;</span>&emsp;Bachelor thesis: "Implementing and evaluating the user experience in a scientific web-app"
+          <li><span class="text-fontPrimary">&#8627;</span>&emsp;<span data-i18n="thesis">Bachelor thesis: "Implementing and evaluating the user experience in a scientific web-app"</span>
           <a class="hover:opacity-70" href="downloads/Abschlussarbeit_395432.pdf" download>
             <img class="w-6 inline" src="img/svg/download-minimalistic-svgrepo-com.svg" alt="">
           </a>
@@ -224,38 +224,38 @@
       </div>
 
       <div class="flex flex-col p-5 gap-2 font-mono text-primary text-shadow-md w-150">
-        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation">History | German | Music Theory</h4>
-        <p class="font-bold">Free University Berlin | 2017</p>
+        <h4 class="text-fontPrimary text-shadow-none text-md font-foundation dark:text-white" data-i18n="free-uni-title">History | German | Music Theory</h4>
+        <p class="font-bold" data-i18n="free-uni">Free University Berlin | 2017</p>
       </div>
 
 
-      <h3 class="text-primary text-shadow-md font-foundation text-2xl">Languages</h3>
+      <h3 class="text-primary text-shadow-md font-foundation text-2xl" data-i18n="language-title">Languages</h3>
 
       <div class="font-foundation text-primary text-shadow-md">
-        <h4>German</h4>
+        <h4 data-i18n="de-lang">German</h4>
         <div class="bg-primary w-100 h-3 rounded-full">
-          <div class="bg-tertiary w-full h-3 rounded-full" style="width: 100%;"></div>
+          <div class="bg-tertiary w-[100%] h-3 rounded-full"></div>
         </div>
       </div>
 
       <div class="font-foundation text-primary text-shadow-md">
-        <h4>English</h4>
+        <h4 data-i18n="en-lang">English</h4>
         <div class="bg-primary w-100 h-3 rounded-full">
-          <div class="bg-tertiary w-full h-3 rounded-full" style="width: 90%;"></div>
+          <div class="bg-tertiary w-[90%] h-3 rounded-full"></div>
         </div>
       </div>
 
       <div class="font-foundation text-primary text-shadow-md">
-        <h4>Russian</h4>
+        <h4 data-i18n="ru-lang">Russian</h4>
         <div class="bg-primary w-100 h-3 rounded-full">
-          <div class="bg-tertiary w-full h-3 rounded-full" style="width: 50%;"></div>
+          <div class="bg-tertiary w-[50%] h-3 rounded-full"></div>
         </div>
       </div>
 
       <div class="font-foundation text-primary text-shadow-md">
-        <h4>Spanish</h4>
+        <h4 data-i18n="es-lang">Spanish</h4>
         <div class="bg-primary w-100 h-3 rounded-full">
-          <div class="bg-tertiary w-full h-3 rounded-full" style="width: 20%;"></div>
+          <div class="bg-tertiary w-[20%] h-3 rounded-full"></div>
         </div>
       </div>
 
@@ -266,7 +266,7 @@
   <footer class="flex justify-center items-center gap-20 bg-primary dark:bg-secondary h-30 font-foundation text-fontPrimary dark:text-white">
     <div><a href="#header">Alex Kens</a></div>
     <div>|</div>
-    <div><a class="hover:opacity-70 active:text-white" href="mailto:alexkens93@gmail.com">Contact</a></div>
+    <div><a class="hover:opacity-70 active:text-white" href="mailto:alexkens93@gmail.com" data-i18n="contact-form">Contact</a></div>
   </footer>
 
 </body>
